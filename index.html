@@ -3,9 +3,41 @@
 <head>
 <meta charset="utf-8">
 <title>My Portfolio</title>
+<style>
+#colorCycle { background-color: #C30; 
+border: medium solid #FF0; 
+padding-top: 5px; padding-right: 7px; padding-bottom: 7px; padding-left: 7px; 
+color: #FFF;
+text-align: center; 
+animation-name: homeCycle; 
+animation-duration:6s; 
+animation-direction:alternate; 
+animation-iteration-count:infinite; 
+
+-webkit-animation-name: homeCycle; 
+-webkit-animation-duration:6s; 
+-webkit-animation-direction:alternate; 
+-webkit-animation-iteration-count:infinite; }	
+
+@keyframes homeCycle 
+{
+0% {background-color:#000000;} 
+25% {background-color:#FF00D8;} 
+50% {background-color:#00F0FF;} 
+75% {background-color:#603;} 
+} 
+
+@-webkit-keyframes homeCycle 
+{ 
+0% {background-color:#000000;} 
+25% {background-color:FF00D8;} 
+50% {background-color:#00F0FF;} 
+75% {background-color:#603;} 
+}
+</style>
 </head>
 
-<body>
+<body id="colorCycle">
 <a href="/gamecharacter/8bitavatar-kirenreynolds.pdf">Angry Birds Portfolio</a>
 <a href="/website/">Flynn's Website</a>
 <a href="/animation/">Nursery Rhyme Animation</a>
